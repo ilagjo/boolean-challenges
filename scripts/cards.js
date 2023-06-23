@@ -31,7 +31,7 @@ function openModal() {
       href: "#",
     },
     {
-      imgSrc: "../src/images/screen-4.png",
+      imgSrc: "./src/images/screen-4.png",
       imgAlt: "Venture Game Project",
       description: "Lesson Project realized using OpenAI platform",
       href: "#",
