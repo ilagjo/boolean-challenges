@@ -22,45 +22,42 @@
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: $small-shadow;
-  
-  
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid $secondary-color;
-    width: 300px;
-  }
-  
-  .close {
-    text-align: right;
-    color: $primary-color;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
 
-  h2 {
-    padding: 0 10px;
-  }
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid $secondary-color;
+      width: 300px;
+    }
 
-  hr {
-    @include title-line($primary-color, 45px);
-  }
+    .close {
+      text-align: right;
+      color: $primary-color;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-  p {
-    padding: 10px;
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    h2 {
+      padding: 0 10px;
+    }
+
+    hr {
+      @include title-line($primary-color, 45px);
+    }
+
+    p {
+      padding: 10px;
+    }
   }
-  
-}
-  
 
   .cards {
     display: flex;
@@ -73,21 +70,18 @@
       margin: 1%;
       box-shadow: $big-shadow;
 
-      &:hover  {
-          border-color: $primary-color;
-          .card-image {
-            opacity: 0.7;
-          }
-          .btn {
-            background: $secondary-color;
-            color: #fff;
-            text-shadow: -1px -1px 2px $primary-color;
-          }
-          
-      
+      &:hover {
+        border-color: $primary-color;
+        .card-image {
+          opacity: 0.7;
         }
+        .btn {
+          background: $secondary-color;
+          color: #fff;
+          text-shadow: -1px -1px 2px $primary-color;
+        }
+      }
 
-      
       .card-image {
         height: 200px;
         overflow: hidden;
@@ -100,7 +94,7 @@
       .card-text {
         color: black;
       }
-      
+
       .card-footer {
         display: flex;
         background-color: $white;
@@ -110,7 +104,6 @@
         .btn {
           margin: 5px;
         }
-
       }
     }
   }
@@ -119,5 +112,3 @@
     text-align: center;
   }
 }
-
-
