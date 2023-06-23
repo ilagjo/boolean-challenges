@@ -16,7 +16,7 @@ function openModal() {
       imgSrc: "./src/images/screen-1.png",
       imgAlt: "Day One",
       description: "HTML and CSS, first lesson project, Landing Page",
-      href: "../landing-page/project-1.html",
+      href: "./landing-page/project-1.html",
     },
     {
       imgSrc: "./src/images/screen-2.png",
