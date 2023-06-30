@@ -82,6 +82,5 @@ window.onload = function () {
   }
 };
 
-// Aggiungi l'evento click per chiudere il modale
 const closeBtn = document.querySelector(".close");
 closeBtn.addEventListener("click", closeModal);

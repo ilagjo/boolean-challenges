@@ -139,7 +139,7 @@ async function makeRequest(endpoint, data) {
     const response = await fetch(API_BASE_URL + endpoint, {
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${API_KEY}`,
+            'Authorization': `Bearer ${API_KEY2}`,
         },
         method: 'POST',
         body: JSON.stringify(data)
