@@ -1,4 +1,4 @@
-import API_KEY from "./config.js";
+import API_KEY1 from "../../build/config1.js";
 /*-----------
     VARIABILI 
 ------------*/
@@ -26,7 +26,7 @@ async function playCharacter(nameCharacter) {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": `Bearer ${API_KEY}` 
+            "Authorization": `Bearer ${API_KEY1}` 
         },
         body: JSON.stringify({
             model: MODEL,
