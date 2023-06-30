@@ -63,7 +63,7 @@ function createCards(cardsData) {
     const button = viewButtons[i];
     button.addEventListener("click", function (event) {
       event.preventDefault();
-      if (i === cardsData.length - 1) {
+      if (i >= cardsData.length - 3) {
         openModal();
       } else {
         window.location.href = button.getAttribute("href");

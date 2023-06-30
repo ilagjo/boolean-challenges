@@ -1,4 +1,4 @@
-import {API_BASE_URL, GPT_MODEL, API_KEY, API_COMPLETIONS, API_IMAGE} from './config.js';
+import {API_BASE_URL, GPT_MODEL, API_KEY2, API_COMPLETIONS, API_IMAGE} from '../../build/config2.js';
 
 // Store elements in variables
 const ingredients = document.querySelectorAll('.ingredient');
