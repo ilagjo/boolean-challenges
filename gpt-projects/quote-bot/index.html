@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Bot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quote from a Bot</h1>
+        <p>Seleziona un personaggio e vedi <br> cosa ha da dire!</p>
+    </header>
+    <main>
+        <div class="container">
+            <div class="characters">
+                <div class="character" data-character="Ash Ketchum">
+                    <img src="./images/ash-ketchum.png" />
+                </div>
+                <div class="character" data-character="Batman">
+                    <img src="./images/batman.png" />
+                </div>
+                <div class="character" data-character="Homer Simpson">
+                    <img src="./images/homer-simpson.png" />
+                </div>
+                <div class="character" data-character="Hermione Granger">
+                    <img src="./images/hermione-granger.png" />
+                </div>
+                <div class="character" data-character="Gandalf">
+                    <img src="./images/gandalf.png" />
+                </div>
+                <div class="character" data-character="Harley Quinn">
+                    <img src="./images/harley-quinn.png" />
+                </div>
+                <div class="character" data-character="Shrek">
+                    <img src="./images/shrek.png" />
+                </div>
+                <div class="character" data-character="Barbie">
+                    <img src="./images/barbie.png" />
+                </div>
+                <div class="character" data-character="Minion">
+                    <img src="./images/minion.png" />
+                </div>
+            </div>
+        </div>
+        <!-- loading -->
+        <div class="loading loading-hidden">
+            <img src="./images/loader.gif" alt="Loader" />
+        </div>
+        
+        <!-- modal -->
+        <div class="modal modal-hidden">
+            <div class="modal-box">
+                <div class="modal-close">
+                    <img src="./images/close.svg" />
+                </div>
+                <div class="modal-content">
+                    <h2></h2>
+                    <p></p>
+                    <code></code>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+
+    <script type="module" src="./quote.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+/* 
+    STYLE GUIDE:
+
+    Colore blue: #1212b2
+    Colore giallo: #e9f45b
+    Colore azzurro sfondo pagina: #6885e0
+    Colore azzurro : #a1d2ff
+    Colore rosa: #ffaafb
+    Colore sfondo loading e modale: rgba(161, 210, 255, 0.8) 
+*/
+
+/*--------------
+    RESET
+---------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--------------
+    GENERAL
+---------------*/
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #6885e0;
+    color: #1212b2;
+}
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+.container {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+/*--------------
+    HEADER
+---------------*/
+header {
+    background-color:  #e9f45b;
+    text-align: center;
+    padding: 32px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .4);
+}
+
+/*--------------
+    CHARACTER
+---------------*/
+.character {
+    height: 112px;
+    width: 112px;
+    background-color: #a1d2ff;
+    box-shadow: 0 0 24px rgba(0, 0, 0, .4);
+    border-radius: 100%;
+    border: 2px solid #1212b2;
+    overflow: hidden;
+}
+
+.character:hover {
+    border: 2px solid #e9f45b;
+}
+
+.character img {
+    max-width: 100%;
+    cursor: pointer;
+    
+}
+
+.characters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 40px 4px;
+}
+
+/*--------------
+    LOADING
+---------------*/
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(161, 210, 255, 0.8);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading img {
+    width: 100px;
+}
+
+.loading-hidden {
+    display: none;
+}
+
+/*--------------
+    MODAL
+---------------*/
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(161, 210, 255, 0.8);
+    z-index: 999;
+}
+
+.modal-box {
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #1212b2;
+    max-width: 512px;
+    margin: 24px auto;
+}
+
+.modal-close {
+    background-color: #ffaafb;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    border: 2px solid #1212b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.modal-hidden {
+    display: none;
+}

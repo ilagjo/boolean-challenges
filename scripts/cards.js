@@ -19,19 +19,19 @@ const cardsData = [
     imgSrc: "./src/images/screen-2.png",
     imgAlt: "Quote from a Bot.",
     description: "Lesson Project covering Javascript",
-    href: "#",
+    href: "./gpt-projects/quote-bot/index.html",
   },
   {
     imgSrc: "./src/images/screen-3.png",
     imgAlt: "Emoji Chef Project",
     description: "Lesson Project realized using OpenAI platform",
-    href: "#",
+    href: "./gpt-projects/emoji-chef/index.html",
   },
   {
     imgSrc: "./src/images/screen-4.png",
     imgAlt: "Venture Game Project",
     description: "Lesson Project realized using OpenAI platform",
-    href: "#",
+    href: "./gpt-projects/venture-game/index.html",
   },
 ];
 
@@ -56,13 +56,14 @@ function createCards(cardsData) {
 
   container.innerHTML = cardsHtml;
 
+// MODAL
   // Just for working progress projects
   const viewButtons = document.querySelectorAll(".view-btn");
   for (let i = 0; i < viewButtons.length; i++) {
     const button = viewButtons[i];
     button.addEventListener("click", function (event) {
       event.preventDefault();
-      if (i >= cardsData.length - 3) {
+      if (i === cardsData.length - 1) {
         openModal();
       } else {
         window.location.href = button.getAttribute("href");
@@ -70,6 +71,7 @@ function createCards(cardsData) {
     });
   }
 }
+// MODAL - END
 
 createCards(cardsData);
 
